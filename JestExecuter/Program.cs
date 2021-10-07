@@ -1,4 +1,5 @@
 ﻿using System;
+using JestExecuter.jest;
 
 namespace JestExecuter
 {
@@ -6,6 +7,7 @@ namespace JestExecuter
     {
         static void Main()
         {
+            var test_1 = new Data_test().TestReadFile();
 #if DEBUG
             Console.WriteLine("Jest Running");
             Console.Read();
